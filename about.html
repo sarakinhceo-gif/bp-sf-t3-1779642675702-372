@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 | 강남 셔츠룸 No.1 - 마포 힙플레이스 카페</title>
+    <meta name="description" content="마포 힙플레이스 카페 강남 셔츠룸의 모든 정보. 위치, 시간, 철학. 규칙은 없다. 오직 감각만 있을 뿐. 예약: 010-6279-0862.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 카페, 힙플레이스, 브루탈리즘 카페, 노는물결, 개성파 카페, 서울 감성카페, 셔츠룸 카페, 정보">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta property="og:title" content="정보 | 강남 셔츠룸 No.1 - 마포 힙플레이스 카페">
+    <meta property="og:description" content="마포에서 가장 뜨거운 힙플 카페 강남 셔츠룸의 진짜 정보. 규칙은 없다. 오직 감각만 있을 뿐. 010-6279-0862.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xn--9t4b11al7b.com/info">
+    <meta property="og:image" content="https://xn--9t4b11al7b.com/assets/og-info.jpg">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://xn--9t4b11al7b.com/info">
+    <!-- CSS 핵심은 동일하게 가져옴 -->
+    <style>
+        /* RESET */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Noto Sans KR', system-ui, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.1; }
+        h1 { font-size: clamp(2.5rem, 6vw, 5rem); color: #f0f0f0; }
+        h2 { font-size: clamp(2rem, 4vw, 3.5rem); color: #f0f0f0; border-left: 6px solid #ff0066; padding-left: 1rem; margin-bottom: 2rem; }
+        h3 { font-size: 1.5rem; color: #ccc; }
+        p, li, blockquote { font-size: 1.125rem; color: #b0b0b0; }
+        a { color: #ff0066; text-decoration: none; font-weight: 700; border-bottom: 2px solid transparent; transition: border 0.2s; }
+        a:hover { border-bottom-color: #ff0066; }
+
+        /* LAYOUT SPACE : airy */
+        header, main, footer { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        section { margin-bottom: 4rem; }
+        .container { display: flex; flex-direction: column; gap: 2rem; }
+
+        /* BRUTALIST PATTERNS - solid borders, heavy contrast */
+        .card { background: #1a1a1a; border: 3px solid #333; padding: 2rem; border-radius: 0; box-shadow: 8px 8px 0 #000; transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0 #000; }
+        .card h3 { margin-bottom: 1rem; }
+        .card p { margin-bottom: 0.5rem; }
+        .badge { display: inline-block; background: #ff0066; color: #0a0a0a; padding: 0.25rem 0.75rem; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; border: 2px solid #ff0066; }
+
+        /* nav-present */
+        nav { display: flex; justify-content: space-between; align-items: center; background: #111; border-bottom: 3px solid #333; padding: 1rem 2rem; margin-bottom: 2rem; }
+        nav .logo { font-size: 1.5rem; font-weight: 900; color: #f0f0f0; text-transform: uppercase; letter-spacing: -0.02em; }
+        nav ul { display: flex; gap: 2rem; list-style: none; }
+        nav ul li a { color: #ccc; font-weight: 600; border-bottom: none; padding: 0.25rem 0; }
+        nav ul li a:hover, nav ul li a.active { color: #ff0066; border-bottom: 2px solid #ff0066; }
+        .nav-cta { background: #ff0066; color: #0a0a0a; padding: 0.5rem 1.5rem; font-weight: 800; border: 2px solid #ff0066; text-transform: uppercase; }
+
+        /* hamburger-menu (mobile) */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 28px; height: 3px; background: #f0f0f0; border-radius: 0; }
+        @media (max-width: 768px) {
+            nav ul { display: none; flex-direction: column; background: #111; position: absolute; top: 100%; left: 0; right: 0; padding: 1rem; border-bottom: 3px solid #333; }
+            nav ul.open { display: flex; }
+            .hamburger { display: flex; }
+            .container { gap: 1.5rem; }
+            .card { padding: 1.5rem; }
+        }
+
+        /* tel-link */
+        .tel-link { display: inline-flex; align-items: center; gap: 0.5rem; background: #ff0066; color: #0a0a0a; padding: 1rem 2rem; font-weight: 900; font-size: 1.25rem; border: 3px solid #ff0066; text-transform: uppercase; letter-spacing: 0.05em; transition: all 0.2s; }
+        .tel-link:hover { background: transparent; color: #ff0066; border: 3px solid #ff0066; }
+
+        /* responsive-768 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .tel-link { font-size: 1rem; padding: 0.75rem 1.5rem; }
+            header, main, footer { padding: 1rem; }
+        }
+
+        /* 추가: FAQ 스타일 */
+        .faq-item { border-bottom: 2px solid #333; padding: 1.5rem 0; }
+        .faq-question { font-weight: 800; font-size: 1.25rem; color: #f0f0f0; cursor: default; margin-bottom: 0.5rem; }
+        .faq-answer { color: #b0b0b0; margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">셔츠룸</div>
+            <div class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/menu">메뉴</a></li>
+                <li><a href="/gallery">갤러리</a></li>
+                <li><a href="/contact">연락처</a></li>
+                <li><a href="tel:010-6279-0862" class="nav-cta">지금 전화</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h1>알아야 할 것들</h1>
+                <p class="badge">마포 힙플 No.1</p>
+                <p style="font-size: 1.25rem; margin-top: 1rem;">규칙은 없다. 오직 감각만 있을 뿐. 강남 셔츠룸은 그냥 감각이 통하는 사람들이 모이는 곳이다. 위치? 마포의 숨겨진 골목. 시간? 문이 열려 있으면 와라. 철학? 남의 잣대는 여기서 의미 없다. 이게 다야.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>상세 정보</h2>
+            <div class="container">
+                <div class="card">
+                    <h3>📍 위치</h3>
+                    <p>서울 마포구 와우산로 29길 ㅇㅇ (정확한 주소는 전화로 알려줌)</p>
+                    <p><strong>찾아오는 법:</strong> 홍대입구역 3번 출구에서 7분. 골목 안으로 쭉. 깃발 보이면 그 건물 1층.</p>
+                </div>
+                <div class="card">
+                    <h3>⏰ 운영 시간</h3>
+                    <p>월~토: 12:00 - 24:00 (일요일은 유동적)</p>
+                    <p>문이 닫혀 있어도 전화해 봐. 우리는 규칙에 얽매이지 않는다.</p>
+                </div>
+                <div class="card">
+                    <h3>☕ 시그니처</h3>
+                    <p>셔츠룸 블랙 (더치), 브루탈리스트 라떼, 감각의 티</p>
+                    <p>메뉴는 고정 아님. 바리스타 기분에 따라 바뀜. 그게 매력.</p>
+                </div>
+                <div class="card">
+                    <h3>📞 예약</h3>
+                    <p>전화: <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></p>
+                    <p>예약 없이 와도 좋아. 하지만 전화 한 통이면 확실하게 자리 잡아줌.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>자주 묻는 질문</h2>
+            <div class="container">
+                <div class="faq-item">
+                    <div class="faq-question">주차 가능?</div>
+                    <div class="faq-answer">우리 주차장 없다. 근처 공영주차장 이용. 아니면 그냥 대중교통 타고 와. 더 힙함.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">셔츠룸이 뭔데?</div>
+                    <div class="faq-answer">강남 셔츠룸? 말 그대로 셔츠 차림으로 즐기는 공간. 여기는 그 감성을 카페로 옮긴 거. 정장 입을 필요 없음. 그냥 너 자신이면 돼.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">혼자 와도 돼?</div>
+                    <div class="faq-answer">혼자 와서 책 보고 커피 마시는 게 제일 힙함. 오히려 환영. 단, 핸드폰만 보면 짜증내는 직원 있을 수 있음.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">가격 부담 없어?</div>
+                    <div class="faq-answer">싸지도 않고 비싸지도 않음. 감각에 가격표를 매기지 마라. 대
+</body>
+</html>
